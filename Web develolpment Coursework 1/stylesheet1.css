@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #4CAF50;        
+    --secondary-color: #FFFFFF;       
+    --background-dark: #1e1e1e;       
+    --font-main: 'Arial', sans-serif;
+    --overlay-color: rgba(0, 0, 0, 0.6); 
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--secondary-color);
+    background-color: var(--background-dark); 
+}
+
+header {
+    background-color: #000000; 
+}
+
+header a.nav-link, footer a.nav-link {
+    color: var(--secondary-color); 
+    font-weight: bold;
+}
+
+header a.nav-link:hover, footer a.nav-link:hover {
+    color: var(--primary-color); 
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: var(--background-dark); 
+    border: none;
+    position: absolute;
+    z-index: 1000;
+    padding: 0.5rem 0;
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; 
+    margin-top: 0;
+}
+
+.dropdown-item {
+    color: var(--secondary-color); 
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-item:hover {
+    background-color: var(--primary-color); 
+    color: var(--secondary-color); 
+}
+
+
+.jumbotron {
+    background-color: rgba(255, 255, 255, 0); 
+    color: var(--secondary-color); 
+    padding: 2rem;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+
+.jumbotron h1, .jumbotron p, .jumbotron .btn {
+    z-index: 2;
+}
+
+button, .btn-success {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover, .btn-success:hover {
+    background-color: #66bb6a;
+    filter: drop-shadow(0 0 10px #fffdef);
+}
+
+
+footer .navbar-nav {
+    margin-left: auto; 
+}
+
+footer {
+    padding: 1rem 0;
+    text-align: left;
+    background-color: #000000;
+    color: var(--secondary-color);
+    border-top: 1px solid #333333; 
+}
+
+.section-white-text h2, .section-white-text p {
+    color: var(--secondary-color);
+}
+
+.container {
+    background-color: transparent;
+    padding: 2rem 0;
+}
+
+
+
+
+
+
+
